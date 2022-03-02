@@ -1,0 +1,26 @@
+{
+  "name": "javascript-pasword-generator",
+  "version": "1.0.0",
+  "description": "JS password generator ",
+  "default": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass src/sass/main.scss css/style.css -w",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stankovics/JS-password-generator.git"
+  },
+  "author": "Stefan S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stankovics/JS-password-generator/issues"
+  },
+  "homepage": "https://github.com/stankovics/JS-password-generator#readme",
+  "devDependencies": {
+    "core-js": "^3.21.1",
+    "parcel": "^2.3.2",
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.49.9"
+  }
+}

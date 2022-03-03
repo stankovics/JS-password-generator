@@ -19,8 +19,8 @@
   "homepage": "https://github.com/stankovics/JS-password-generator#readme",
   "devDependencies": {
     "core-js": "^3.21.1",
+    "node-sass": "^7.0.1",
     "parcel": "^2.3.2",
-    "regenerator-runtime": "^0.13.9",
-    "sass": "^1.49.9"
+    "regenerator-runtime": "^0.13.9"
   }
 }

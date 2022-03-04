@@ -13,6 +13,21 @@ const SYMBOL_CHAR_CODES = arrayFromLowToHigh(33, 47).concat(
   arrayFromLowToHigh(58, 64).concat(91, 96).concat(123, 126)
 );
 
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  const characterAmount = characterAmountNumber.value;
+  const includeUppercase = includeNumbersElement.checked;
+  const includedNumbers = includeNumbersElement.checked;
+  const includedSymbols = includeSymbolsElement.checked;
+  const password = generatePassword(
+    characterAmount,
+    includeUppercase,
+    includeNumbersElement,
+    includeSymbolsElement
+  );
+  passwordDisplay.innerText = password;
+});
+
 function arrayFromLowToHigh(low, high) {
   const array = [];
   for (let i = low; i <= high; i++) {

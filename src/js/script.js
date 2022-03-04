@@ -20,3 +20,22 @@ function arrayFromLowToHigh(low, high) {
   }
   return array;
 }
+function generatePassword(
+  characterAmount,
+  includeUppercase,
+  includedNumbers,
+  includedSymbols
+) {
+  let charCodes = LOWERCASE_CHAR_CODES;
+  if (includeUppercase) charCodes = charCodes.concat(UPPERCASE_CHAR_CODES);
+  if (includedSymbols) charCodes = charCodes.concat(SYMBOL_CHAR_CODES);
+  if (includedNumbers) charCodes = charCodes.concat(NUMBER_CHAR_CODES);
+
+  const passwordCharacters = [];
+  for (let i = 0; i < characterAmount; i++) {
+    const characterCode =
+      charCodes[Math.floor(Math.random() * charCodes.length)];
+    passwordCharacters.push(String.fromCharCode(characterCode));
+  }
+  return passwordCharacters.join('');
+}

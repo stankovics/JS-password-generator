@@ -5,7 +5,8 @@
   "default": "index.html",
   "scripts": {
     "compile:sass": "node-sass src/sass/main.scss css/style.css -w",
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",
